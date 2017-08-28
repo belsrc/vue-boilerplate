@@ -126,8 +126,7 @@ if(isProduction) {
   );
 
   config.plugins.push(new webpack.NoErrorsPlugin());
-  config.plugins.push(new webpack.optimize.DedupePlugin());
-  config.plugins.push(new webpack.optimize.OccurenceOrderPlugin(true));
+  config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin(true));
 
   config.plugins.push(new BabiliPlugin({
     mangle: true,

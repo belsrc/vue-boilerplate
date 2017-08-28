@@ -17,10 +17,10 @@ export default {
 
   created() {
     // EventBus example
-    // this.$bus.$on('message', msg => {
-    //   console.log(msg);
-    // });
-    // this.$bus.$emit('message', 'Component created');
+    this.$bus.$on('message', msg => {
+      console.log(msg);
+    });
+    this.$bus.$emit('message', 'Component created');
   },
 
   watch: { },
